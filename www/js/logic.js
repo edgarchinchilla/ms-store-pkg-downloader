@@ -11,7 +11,7 @@ function setAppValues(appId, ring) {
 // JSON LOAD AND DYNAMIC TABLE BUILDER
 function loadJsonAndBuildAppsList() {
     const dataTable = document.getElementById('appsList');
-    fetch('./assets/data.json')
+    fetch('./www/assets/data.json')
         .then(response => response.json())
         .then(data => {
             // BUILDING TABLE HEADER
