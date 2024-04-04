@@ -1,12 +1,327 @@
 [
     {
-        "name": "Item 1",
-        "desc": "Description of Item 1",
-        "appid": 12345
+        "Name": "Microsoft Store",
+        "Info": "",
+        "AppID": "8WEKYB3D8BBWE"
     },
     {
-        "name": "Item 2",
-        "desc": "Description of Item 2",
-        "appid": 54321
+        "Name": "Microsoft App Installer",
+        "Info": "https: //go.microsoft.com/fwlink/?linkid=2249905&culture=es-gt&country=gt&clcid=0x100a",
+        "AppID": "9NBLGGH4NNS1"
+    },
+    {
+        "Name": "Remote Desktop",
+        "Info": "",
+        "AppID": "9WZDNCRFJ3PS"
+    },
+    {
+        "Name": "Microsoft Designer",
+        "Info": "",
+        "AppID": "9PJGRCLDLX5V"
+    },
+    {
+        "Name": "Microsoft Loop",
+        "Info": "",
+        "AppID": "9P1HQ5TQZMGD"
+    },
+    {
+        "Name": "Microsoft Font Maker",
+        "Info": "",
+        "AppID": "9N9209F8S3VC"
+    },
+    {
+        "Name": "Lenovo Commercial Vantage",
+        "Info": "",
+        "AppID": "9NR5B8GVVM13"
+    },
+    {
+        "Name": "Lenovo ELAN TrackPoint for Thinkpad",
+        "Info": "",
+        "AppID": "9PKZNRN46X9J"
+    },
+    {
+        "Name": "Lively Wallpaper",
+        "Info": "https: //github.com/rocksdanister/lively",
+        "AppID": "9NTM2QC6QWS7"
+    },
+    {
+        "Name": "Lively Weather",
+        "Info": "https: //github.com/rocksdanister/weather",
+        "AppID": "9PP0MFQFVSC5"
+    },
+    {
+        "Name": "Dynamic Theme",
+        "Info": "https: //apps.pinnula.ca/es/dynamic-theme/9bghzk",
+        "AppID": "9NBLGGH1ZBKW"
+    },
+    {
+        "Name": "PowerPlan Switcher",
+        "Info": "",
+        "AppID": "9NBLGGH556L3"
+    },
+    {
+        "Name": "Files",
+        "Info": "",
+        "AppID": "9NGHP3DX8HDX"
+    },
+    {
+        "Name": "Clippy by Firecube",
+        "Info": "",
+        "AppID": "9NWK37S35V5T"
+    },
+    {
+        "Name": "Spotify",
+        "Info": "",
+        "AppID": "9NCBCSZSJRSB"
+    },
+    {
+        "Name": "PuTTy",
+        "Info": "",
+        "AppID": "XPFNZKSKLBP7RJ"
+    },
+    {
+        "Name": "ClipChamp",
+        "Info": "",
+        "AppID": "9P1J8S7CCWWT"
+    },
+    {
+        "Name": "Ambie White Noise",
+        "Info": "",
+        "AppID": "9P07XNM5CHP0"
+    },
+    {
+        "Name": "Ookla SpeedTest",
+        "Info": "",
+        "AppID": "9NBLGGH4Z1JC"
+    },
+    {
+        "Name": "PowerToys",
+        "Info": "",
+        "AppID": "XP89DCGQ3K6VLD"
+    },
+    {
+        "Name": "DevToys",
+        "Info": "",
+        "AppID": "9PGCV4V3BK4W"
+    },
+    {
+        "Name": "WinToys",
+        "Info": "",
+        "AppID": "9P8LTPGCBZXD"
+    },
+    {
+        "Name": "WhatsApp",
+        "Info": "",
+        "AppID": "9NKSQGP7F2NH"
+    },
+    {
+        "Name": "Microsoft Phone Link",
+        "Info": "https: //aka.ms/linkphone, https: //aka.ms/phonelinkqrc, https: //www.aka.ms/yourpc",
+        "AppID": "9NMPJ99VJBWV"
+    },
+    {
+        "Name": "Microsoft Snipping Tool (Screen Sketch)",
+        "Info": "",
+        "AppID": "9MZ95KL8MR0L"
+    },
+    {
+        "Name": "Microsoft Teams",
+        "Info": "",
+        "AppID": "XP8BT8DW290MPQ"
+    },
+    {
+        "Name": "Microsoft To Do: Lists, Tasks & Reminders",
+        "Info": "",
+        "AppID": "9NBLGGH5R558"
+    },
+    {
+        "Name": "New Outlook for Windows",
+        "Info": "",
+        "AppID": "9NRX63209R7B"
+    },
+    {
+        "Name": "Microsoft Mail and Calendar",
+        "Info": "",
+        "AppID": "9WZDNCRFHVQM"
+    },
+    {
+        "Name": "Microsoft Quick Assist",
+        "Info": "",
+        "AppID": "9P7BP5VNWKX5"
+    },
+    {
+        "Name": "Dev Home",
+        "Info": "https: //aka.ms/dsc.yaml",
+        "AppID": "9N8MHTPHNGVV"
+    },
+    {
+        "Name": "Windows 365",
+        "Info": "",
+        "AppID": "9N1F85V9T8BN"
+    },
+    {
+        "Name": "Windows Web Experience Pack",
+        "Info": "",
+        "AppID": "9MSSGKG348SP"
+    },
+    {
+        "Name": "Windows Subsystem for Linux (WSL)",
+        "Info": "",
+        "AppID": "9P9TQF7MRM4R"
+    },
+    {
+        "Name": "WSL Manager",
+        "Info": "https: //github.com/bostrot/wsl2-distro-manager",
+        "AppID": "9NWS9K95NMJB"
+    },
+    {
+        "Name": "Ubuntu (WSL)",
+        "Info": "",
+        "AppID": "9PDXGNCFSCZV"
+    },
+    {
+        "Name": "Windows Subsystem for Android (WSA)",
+        "Info": "https: //github.com/MustardChef/WSAPackages/, https: //github.com/MustardChef/WSABuilds",
+        "AppID": "9P3395VX91NR"
+    },
+    {
+        "Name": "WSA System Control",
+        "Info": "https: //github.com/infinitepower18/WSA-SystemControl",
+        "AppID": "9PFCTFQ8V8C3"
+    },
+    {
+        "Name": "WSA Toolbox",
+        "Info": "",
+        "AppID": "9PPSP2MKVTGT"
+    },
+    {
+        "Name": "MSIX Packaging Tool",
+        "Info": "",
+        "AppID": "9N5LW3JBCXKF"
+    },
+    {
+        "Name": "Microsoft Photos",
+        "Info": "",
+        "AppID": "9WZDNCRFJBH4"
+    },
+    {
+        "Name": "Microsoft AV1 Video Extension",
+        "Info": "",
+        "AppID": "9MVZQVXJBQ9V"
+    },
+    {
+        "Name": "Microsoft MPEG-2 Video Extension",
+        "Info": "",
+        "AppID": "9N95Q1ZZPMH4"
+    },
+    {
+        "Name": "Microsoft HEV-C Video Extension",
+        "Info": "",
+        "AppID": "9NMZLZ57R3T7"
+    },
+    {
+        "Name": "Microsoft HEV-C Video Extensions from Device Manufacturer",
+        "Info": "https: //www.reddit.com/r/Windows11/comments/zqq346/no_longer_free_windows_10_hevc_video_extensions/",
+        "AppID": "9N4WGH0Z6VHQ"
+    },
+    {
+        "Name": "Microsoft Webp Image Extension",
+        "Info": "",
+        "AppID": "9PG2DK419DRG"
+    },
+    {
+        "Name": "Power Apps",
+        "Info": "",
+        "AppID": "9MVC8P1Q3B29"
+    },
+    {
+        "Name": "Microsoft Surface App",
+        "Info": "",
+        "AppID": "9WZDNCRFJB8P"
+    },
+    {
+        "Name": "Microsoft Surface Manager Extension",
+        "Info": "",
+        "AppID": "9NCT159F4QVG"
+    },
+    {
+        "Name": "Microsoft Surface Diagnostic Kit",
+        "Info": "",
+        "AppID": "9NF1MR6C60ZF"
+    },
+    {
+        "Name": "Microsoft Accesory Center",
+        "Info": "",
+        "AppID": "9N013P0KR5VX"
+    },
+    {
+        "Name": "Powershell",
+        "Info": "",
+        "AppID": "9MZ1SNWT0N5D"
+    },
+    {
+        "Name": "Windows Terminal",
+        "Info": "",
+        "AppID": "9N0DX20HK701"
+    },
+    {
+        "Name": "OneDrive",
+        "Info": "",
+        "AppID": "9WZDNCRFJ1P3"
+    },
+    {
+        "Name": "Microsoft Windows Media Player",
+        "Info": "",
+        "AppID": "9WZDNCRFJ3PT"
+    },
+    {
+        "Name": "Microsoft DVD Player",
+        "Info": "",
+        "AppID": "9NBLGGH2J19W"
+    },
+    {
+        "Name": "Microsoft Windows Notepad",
+        "Info": "",
+        "AppID": "9MSMLRH6LZF3"
+    },
+    {
+        "Name": "Power BI Desktop",
+        "Info": "",
+        "AppID": "9NTXR16HNW1T"
+    },
+    {
+        "Name": "Microsoft Sticky Notes",
+        "Info": "",
+        "AppID": "9NBLGGH4QGHW"
+    },
+    {
+        "Name": "Microsoft Windows Calculator",
+        "Info": "",
+        "AppID": "9WZDNCRFHVN5"
+    },
+    {
+        "Name": "Microsoft Windows File Recovery",
+        "Info": "",
+        "AppID": "9N26S50LN705"
+    },
+    {
+        "Name": "Microsoft Paint",
+        "Info": "",
+        "AppID": "9PCFS5B6T72H"
+    },
+    {
+        "Name": "Microsoft Defender",
+        "Info": "",
+        "AppID": "9P6PMZTM93LR"
+    },
+    {
+        "Name": "Microsoft Defender Application Guard Companion",
+        "Info": "",
+        "AppID": "9N8GNLC8Z9C8"
+    },
+    {
+        "Name": "Pantone Color of the Year 2022",
+        "Info": "",
+        "AppID": "9NJW9J87LCVP"
     }
 ]

@@ -881,12 +881,24 @@
                     // Create table body rows
                     for (let i = 0; i < data.length; i++) {
                         const item = data[i];
+                        let latestItemValue = "";
                         const dataRow = document.createElement('tr');
                         for (const value in item) {
                             const dataCell = document.createElement('td');
                             dataCell.textContent = item[value];
+                            latestItemValue = item[value];
                             dataRow.appendChild(dataCell);
                         }
+                        // Add an "Actions" field with one button per Store "Ring"
+                        const dataCell = document.createElement('td');
+                        dataCell.className = "action-buttons";
+                        // NOTE: latestItemValue in the JSON is the AppID
+                        dataCell.innerHTML += "<button onclick=\"setAppValues('" + latestItemValue + "', 'Retail')\" class=\"custom-button retail-ring\">Retail</button>";
+                        dataCell.innerHTML += "<button onclick=\"setAppValues('" + latestItemValue + "', 'RP')\" class=\"custom-button releasepreview-ring\">Release Preview</button>";
+                        dataCell.innerHTML += "<button onclick=\"setAppValues('" + latestItemValue + "', 'WIS')\" class=\"custom-button slow-ring\">Slow</button>";
+                        dataCell.innerHTML += "<button onclick=\"setAppValues('" + latestItemValue + "', 'WIF')\" class=\"custom-button fast-ring\">Fast</button>";
+                        dataRow.appendChild(dataCell);
+                        // Append row to table
                         dataTable.appendChild(dataRow);
                     }
                 })
