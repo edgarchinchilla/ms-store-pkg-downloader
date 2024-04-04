@@ -2,7 +2,7 @@
 function setAppValues(appId, ring) {
     document.getElementById('appId').value = appId;
     //document.getElementById('ringInput').value = ring;
-    var ringOptions = document.getElementById('ringInput');
+    let ringOptions = document.getElementById('ringInput');
     ringOptions.value = ring;
     // ringOptions.options[ring].selected = true;
     document.getElementById('appListForm').submit();
@@ -10,6 +10,7 @@ function setAppValues(appId, ring) {
 
 // JSON LOAD AND DYNAMIC TABLE BUILDER
 function loadJsonAndBuildAppsList() {
+    const dataTable = document.getElementById('appsList');
     fetch('./../assets/data.json')
         .then(response => response.json())
         .then(data => {
