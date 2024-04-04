@@ -71,11 +71,11 @@ function loadJsonAndBuildAppsList() {
 // TABLE FILTERING
 function addTableFiltering() {
     const filterInput = document.getElementById('filter');
-    const tableBody = document.getElementById('tableBody');
-    
+    const tableElement = document.getElementById('appsList');
+
     filterInput.addEventListener('keyup', function () {
         const filterValue = this.value.toLowerCase();
-        const tableRows = tableBody.querySelectorAll('tr');
+        const tableRows = tableElement.querySelectorAll('tbody tr');
 
         for (let i = 0; i < tableRows.length; i++) {
             const row = tableRows[i];

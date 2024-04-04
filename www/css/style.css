@@ -110,3 +110,13 @@ tbody tr:nth-child(odd) {
     color: black;
     font-weight: bold;
 }
+
+/* FILTER STYLING */
+#filter {
+    width: 99%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    outline: none;
+    font-size: 16px;
+}
