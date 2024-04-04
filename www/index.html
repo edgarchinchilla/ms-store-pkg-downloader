@@ -31,6 +31,9 @@
         <span class="closebtn" onClick="this.parentElement.style.display='none';">&times;</span>
         *This site relies on the services of <a href="https://store.rg-adguard.net/">rg-adguard.net</a>
     </div>
+    
+    <!-- FILTER FIELD-->
+    <input type="text" id="filter" placeholder="Filter by App name...">
 
     <!-- DYNAMIC APPS LIST HOLDER -->
     <table id="appsList"></table>
@@ -38,6 +41,7 @@
     <script>
         // Call the function to load data on page load
         loadJsonAndBuildAppsList();
+        addTableFiltering();
     </script>
 </body>
 

@@ -67,3 +67,22 @@ function loadJsonAndBuildAppsList() {
         })
         .catch(error => console.error('Error loading JSON data:', error));
 }
+
+// TABLE FILTERING
+function addTableFiltering() {
+    const filterInput = document.getElementById('filter');
+    const tableBody = document.getElementById('tableBody');
+    
+    filterInput.addEventListener('keyup', function () {
+        const filterValue = this.value.toLowerCase();
+        const tableRows = tableBody.querySelectorAll('tr');
+
+        for (let i = 0; i < tableRows.length; i++) {
+            const row = tableRows[i];
+            const firstCell = row.firstElementChild;
+            const cellText = firstCell.textContent.toLowerCase();
+            const shouldShowRow = cellText.includes(filterValue);
+            row.style.display = shouldShowRow ? '' : 'none';
+        }
+    });
+}
