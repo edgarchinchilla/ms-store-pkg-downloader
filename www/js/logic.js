@@ -15,6 +15,7 @@ function loadJsonAndBuildAppsList() {
         .then(response => response.json())
         .then(data => {
             // BUILDING TABLE HEADER
+            const tableHeader = document.createElement('thead');
             const headerRow = document.createElement('tr');
             for (const key in data[0]) {
                 const headerCell = document.createElement('th');
@@ -30,9 +31,12 @@ function loadJsonAndBuildAppsList() {
             custHeaderCell2.textContent = "Rings";
             headerRow.appendChild(custHeaderCell2);
             // Attach the header row to the table
-            dataTable.appendChild(headerRow);
+            tableHeader.appendChild(headerRow);
+            dataTable.appendChild(tableHeader);
 
-            // BUILDING TABLE ROWS
+            // BUILDING TABLE ROWS (BODY)
+            const tableBody = document.createElement('tbody');
+            tableBody.id = "tableBody";
             for (let i = 0; i < data.length; i++) {
                 const item = data[i];
                 let latestItemValue = "";
@@ -56,9 +60,10 @@ function loadJsonAndBuildAppsList() {
                 actionsDataCell.innerHTML += "<button onClick=\"setAppValues('" + latestItemValue + "', 'WIS')\" class=\"custom-button slow-ring\">Slow</button>";
                 actionsDataCell.innerHTML += "<button onClick=\"setAppValues('" + latestItemValue + "', 'WIF')\" class=\"custom-button fast-ring\">Fast</button>";
                 dataRow.appendChild(actionsDataCell);
-                // Append row to the table
-                dataTable.appendChild(dataRow);
+                // Append row to the table body
+                tableBody.appendChild(dataRow);
             }
+            dataTable.appendChild(tableBody);
         })
         .catch(error => console.error('Error loading JSON data:', error));
 }
