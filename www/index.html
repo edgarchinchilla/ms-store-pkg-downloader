@@ -6,89 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="icon" type="image/png" href="https://apps.microsoft.com/assets/icons/dark-logo-32x32.png" /> -->
     <link rel="icon" type="image/x-icon" href="https://apps.microsoft.com/favicon.ico">
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="./js/logic.js"></script>
     <title>MS Store MSIX Downloader</title>
-    <style>
-        /* Basic styling for the grid */
-        table {
-            border-radius: 10px;
-            overflow: hidden;
-            border-collapse: collapse;
-            width: 100%;
-        }
-
-        th,
-        td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-
-        th {
-            background-color: #224b96;
-            color: #fff;
-        }
-
-        /* Apply gray background to odd rows */
-        tbody tr:nth-child(odd) {
-            background-color: #e9e9e9;
-        }
-
-        /* Styling for the buttons in the "Actions" column */
-        .action-buttons button {
-            margin-right: 5px;
-        }
-        .action-buttons {
-            min-width: 245px;
-        }
-
-        /* Style the buttons */
-        .custom-button {
-            background-color: #2196F3;
-            /* Primary color */
-            padding: 1%;
-            color: white;
-            border: none;
-            outline: none;
-            cursor: pointer;
-            transition: 0.3s;
-            place-items: center;
-            border-radius: 10%;
-            /*aspect-ratio: 1;*/
-        }
-        
-        /* Button colors */
-        .retail-ring {
-            background-color: #0bc050;
-        }
-        .retail-ring:hover {
-            background-color: #01a03e;
-            /* Darker shade on hover */
-        }
-
-        .releasepreview-ring {
-            background-color: #7bda00;
-        }
-        .releasepreview-ring:hover {
-            background-color: #60a801;
-            /* Darker shade on hover */
-        }
-
-        .slow-ring {
-            background-color: #b2da00;
-        }
-        .slow-ring:hover {
-            background-color: #97b900;
-            /* Darker shade on hover */
-        }
-
-        .fast-ring {
-            background-color: #d6da00;
-        }
-        .fast-ring:hover {
-            background-color: #b1b401;
-            /* Darker shade on hover */
-        }
-    </style>
 </head>
 
 <body>
@@ -107,86 +27,17 @@
     </form>
 
     <!-- CREDITS AND WARNINGS -->
-    <span>
+    <div class="alert">
+        <span class="closebtn" onClick="this.parentElement.style.display='none';">&times;</span>
         *This site relies on the services of <a href="https://store.rg-adguard.net/">rg-adguard.net</a>
-    </span>
-
-    <!-- DYNAMIC FORM MANAGEMENT -->
-    <script type="text/javascript">
-        function setAppValues(appId, ring) {
-            document.getElementById('appId').value = appId;
-            //document.getElementById('ringInput').value = ring;
-            var ringOptions = document.getElementById('ringInput');
-            ringOptions.value = ring;
-            // ringOptions.options[ring].selected = true;
-            document.getElementById('appListForm').submit();
-        }
-    </script>
+    </div>
 
     <!-- DYNAMIC APPS LIST HOLDER -->
     <table id="appsList"></table>
-
     <!-- DYNAMIC APPS LIST BUILDER -->
     <script>
-        // Get the table holder for Apps List
-        const dataTable = document.getElementById('appsList');
-
-        // Function to load JSON data anb build the table with Apps List
-        function loadJsonAndBuildAppsList() {
-            fetch('data.json')
-                .then(response => response.json())
-                .then(data => {
-                    // BUILDING TABLE HEADER
-                    const headerRow = document.createElement('tr');
-                    for (const key in data[0]) {
-                        const headerCell = document.createElement('th');
-                        headerCell.textContent = key;
-                        headerRow.appendChild(headerCell);
-                    }
-                    // Add an "MS Store" header
-                    const custHeaderCell1 = document.createElement('th');
-                    custHeaderCell1.textContent = "MS Store";
-                    headerRow.appendChild(custHeaderCell1);
-                    // Add an "Actions" header for Rings
-                    const custHeaderCell2 = document.createElement('th');
-                    custHeaderCell2.textContent = "Rings";
-                    headerRow.appendChild(custHeaderCell2);
-                    // Attach the header row to the table
-                    dataTable.appendChild(headerRow);
-
-                    // BUILDING TABLE ROWS
-                    for (let i = 0; i < data.length; i++) {
-                        const item = data[i];
-                        let latestItemValue = "";
-                        const dataRow = document.createElement('tr');
-                        for (const value in item) {
-                            const dataCell = document.createElement('td');
-                            dataCell.textContent = item[value];
-                            latestItemValue = item[value];
-                            dataRow.appendChild(dataCell);
-                        }
-                        // Add an "Actions" field with one button per Store "Ring"
-                        const msStoreDataCell = document.createElement('td');
-                        msStoreDataCell.innerHTML += "<a href=\"https://apps.microsoft.com/store/detail/" + latestItemValue + "\">Visit on MS Store</a>";
-                        dataRow.appendChild(msStoreDataCell);
-                        // Add an "Actions" field with one button per Store "Ring"
-                        const actionsDataCell = document.createElement('td');
-                        actionsDataCell.className = "action-buttons";
-                        // NOTE: latestItemValue in the JSON is the AppID
-                        actionsDataCell.innerHTML += "<button onclick=\"setAppValues('" + latestItemValue + "', 'Retail')\" class=\"custom-button retail-ring\">Retail</button>";
-                        actionsDataCell.innerHTML += "<button onclick=\"setAppValues('" + latestItemValue + "', 'RP')\" class=\"custom-button releasepreview-ring\">Release Preview</button>";
-                        actionsDataCell.innerHTML += "<button onclick=\"setAppValues('" + latestItemValue + "', 'WIS')\" class=\"custom-button slow-ring\">Slow</button>";
-                        actionsDataCell.innerHTML += "<button onclick=\"setAppValues('" + latestItemValue + "', 'WIF')\" class=\"custom-button fast-ring\">Fast</button>";
-                        dataRow.appendChild(actionsDataCell);
-                        // Append row to the table
-                        dataTable.appendChild(dataRow);
-                    }
-                })
-                .catch(error => console.error('Error loading JSON data:', error));
-        }
-
-        // Call the function to load data on page load
-        loadJsonAndBuildAppsList();
+    // Call the function to load data on page load
+    loadJsonAndBuildAppsList();
     </script>
 </body>
 

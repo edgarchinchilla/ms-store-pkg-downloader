@@ -1,0 +1,112 @@
+/* GRID STYLING */
+table {
+    border-radius: 10px;
+    overflow: hidden;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #224b96;
+    color: #fff;
+}
+
+/* Apply gray background to odd rows */
+tbody tr:nth-child(odd) {
+    background-color: #e9e9e9;
+}
+
+/* BUTTONS HOLDER STYLING */
+.action-buttons button {
+    margin-right: 5px;
+}
+
+.action-buttons {
+    min-width: 245px;
+}
+
+/* BUTTONS STYLING */
+.custom-button {
+    background-color: #2196F3;
+    /* Primary color */
+    padding: 1%;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    place-items: center;
+    border-radius: 10%;
+    /*aspect-ratio: 1;*/
+}
+
+/* Button colors */
+.retail-ring {
+    background-color: #0bc050;
+}
+
+.retail-ring:hover {
+    background-color: #01a03e;
+    /* Darker shade on hover */
+}
+
+.releasepreview-ring {
+    background-color: #7bda00;
+}
+
+.releasepreview-ring:hover {
+    background-color: #60a801;
+    /* Darker shade on hover */
+}
+
+.slow-ring {
+    background-color: #b2da00;
+}
+
+.slow-ring:hover {
+    background-color: #97b900;
+    /* Darker shade on hover */
+}
+
+.fast-ring {
+    background-color: #d6da00;
+}
+
+.fast-ring:hover {
+    background-color: #b1b401;
+    /* Darker shade on hover */
+}
+
+/* ALERT STYLING */
+.alert {
+    padding: 20px;
+    background-color: #f5af19;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+/* The close button */
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+    color: black;
+    font-weight: bold;
+}
