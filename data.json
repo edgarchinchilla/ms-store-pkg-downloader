@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Item 1",
+        "desc": "Description of Item 1",
+        "appid": 12345
+    },
+    {
+        "name": "Item 2",
+        "desc": "Description of Item 2",
+        "appid": 54321
+    }
+]

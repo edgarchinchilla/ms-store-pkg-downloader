@@ -857,6 +857,45 @@
             document.getElementById('appListForm').submit();
         }
     </script>
+
+    <h1>Data from JSON</h1>
+    <table id="data-table"></table>
+
+    <script>
+        const dataTable = document.getElementById('data-table');
+
+        // Function to load JSON data
+        function loadJsonData() {
+            fetch('data.json') // Replace 'data.json' with your actual file path
+                .then(response => response.json())
+                .then(data => {
+                    // Create table header row
+                    const headerRow = document.createElement('tr');
+                    for (const key in data[0]) {
+                        const headerCell = document.createElement('th');
+                        headerCell.textContent = key;
+                        headerRow.appendChild(headerCell);
+                    }
+                    dataTable.appendChild(headerRow);
+
+                    // Create table body rows
+                    for (let i = 0; i < data.length; i++) {
+                        const item = data[i];
+                        const dataRow = document.createElement('tr');
+                        for (const value in item) {
+                            const dataCell = document.createElement('td');
+                            dataCell.textContent = item[value];
+                            dataRow.appendChild(dataCell);
+                        }
+                        dataTable.appendChild(dataRow);
+                    }
+                })
+                .catch(error => console.error('Error loading JSON data:', error));
+        }
+
+        // Call the function to load data on page load
+        loadJsonData();
+    </script>
 </body>
 
 </html>
