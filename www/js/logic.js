@@ -12,7 +12,7 @@ function setAppValues(appId, ring) {
 const dataTable = document.getElementById('appsList');
 // Function to load JSON data anb build the table with Apps List
 function loadJsonAndBuildAppsList() {
-    fetch('./assets/data.json')
+    fetch('./../assets/data.json')
         .then(response => response.json())
         .then(data => {
             // BUILDING TABLE HEADER
