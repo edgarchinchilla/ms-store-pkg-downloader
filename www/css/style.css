@@ -1,7 +1,7 @@
 /* BODY STYLING */
 body {
     font-family: "Poppins", sans-serif;
-    background-color: #3b3b3b;
+    background-color: #0d1117;
     padding: 0px;
 }
 
@@ -38,7 +38,7 @@ table {
 
 th,
 td {
-    border: 1px solid #282828;
+    border: 1px solid #161b22;
     padding: 8px;
     text-align: left;
 }
@@ -55,7 +55,7 @@ tbody tr:nth-child(odd) {
 }
 
 tbody tr:nth-child(even) {
-    background-color: #282828;
+    background-color: #161b22;
     color: whitesmoke;
 }
 
@@ -63,7 +63,7 @@ tbody tr:nth-child(even) {
 tbody tr:nth-child(odd) td a,
 tbody tr:nth-child(odd) td a:hover,
 tbody tr:nth-child(odd) td a:visited {
-    color: #282828;
+    color: black;
 }
 
 /* BUTTONS HOLDER STYLING */
@@ -173,7 +173,7 @@ tbody tr:nth-child(odd) td a:visited {
     width: 99%;
     border: none;
     border-radius: 10px;
-    background-color: #282828;
+    background-color: #161b22;
     padding: 10px;
     place-items: center;
     text-align: center;
