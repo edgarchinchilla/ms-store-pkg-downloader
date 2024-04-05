@@ -15,7 +15,7 @@ table {
 
 th,
 td {
-    border: 1px solid #ddd;
+    border: 1px solid #282828;
     padding: 8px;
     text-align: left;
 }
@@ -29,6 +29,10 @@ th {
 tbody tr:nth-child(odd) {
     background-color: lightgray;
     color: black;
+}
+
+tbody tr:nth-child(even) {
+    color: whitesmoke;
 }
 
 /* BUTTONS HOLDER STYLING */
