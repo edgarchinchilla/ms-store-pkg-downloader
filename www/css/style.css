@@ -55,7 +55,15 @@ tbody tr:nth-child(odd) {
 }
 
 tbody tr:nth-child(even) {
+    background-color: #282828;
     color: whitesmoke;
+}
+
+/* Fix white links on lightgray background fields */
+tbody tr:nth-child(odd) td a,
+tbody tr:nth-child(odd) td a:hover,
+tbody tr:nth-child(odd) td a:visited {
+    color: #282828;
 }
 
 /* BUTTONS HOLDER STYLING */
