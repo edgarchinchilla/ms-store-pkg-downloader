@@ -95,7 +95,12 @@
         "AppID": "9NBLGGH4Z1JC"
     },
     {
-        "Name": "PowerToys",
+        "Name": "Microsoft PC Manager",
+        "Info": "",
+        "AppID": "9PM860492SZD"
+    },
+    {
+        "Name": "Microsoft PowerToys",
         "Info": "",
         "AppID": "XP89DCGQ3K6VLD"
     },
@@ -108,6 +113,11 @@
         "Name": "WinToys",
         "Info": "",
         "AppID": "9P8LTPGCBZXD"
+    },
+    {
+        "Name": "WinDbg",
+        "Info": "",
+        "AppID": "9PGJGD53TN86"
     },
     {
         "Name": "WhatsApp",
@@ -303,6 +313,11 @@
         "Name": "Microsoft Windows File Recovery",
         "Info": "",
         "AppID": "9N26S50LN705"
+    },
+    {
+        "Name": "Cross Device Experience Host",
+        "Info": "",
+        "AppID": "9NTXGKQ8P7N0"
     },
     {
         "Name": "Microsoft Paint",
