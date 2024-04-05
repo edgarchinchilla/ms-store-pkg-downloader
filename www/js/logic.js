@@ -49,7 +49,7 @@ function loadJsonAndBuildAppsList() {
                 }
                 // Add an "Actions" field with one button per Store "Ring"
                 const msStoreDataCell = document.createElement('td');
-                msStoreDataCell.innerHTML += "<a href=\"https://apps.microsoft.com/store/detail/" + latestItemValue + "\">Visit on MS Store</a>";
+                msStoreDataCell.innerHTML += "<a href=\"https://apps.microsoft.com/store/detail/" + latestItemValue + "\" target=\"_blank\">Visit on MS Store</a>";
                 dataRow.appendChild(msStoreDataCell);
                 // Add an "Actions" field with one button per Store "Ring"
                 const actionsDataCell = document.createElement('td');

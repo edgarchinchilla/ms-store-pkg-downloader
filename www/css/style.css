@@ -5,12 +5,35 @@ body {
     padding: 0px;
 }
 
+/* LINKS STYLING */
+/* unvisited link */
+a:link {
+    color: whitesmoke;
+}
+
+/* visited link */
+a:visited {
+    color: whitesmoke;
+}
+
+/* mouse over link */
+a:hover {
+    color: whitesmoke;
+    font-weight: 200;
+}
+
+/* selected link */
+a:active {
+    color: whitesmoke;
+}
+
 /* GRID STYLING */
 table {
     border-radius: 10px;
     overflow: hidden;
     border-collapse: collapse;
     width: 100%;
+    margin-bottom: 15px;
 }
 
 th,
