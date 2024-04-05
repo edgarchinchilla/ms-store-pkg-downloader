@@ -92,38 +92,38 @@ tbody tr:nth-child(odd) td a:visited {
 
 /* Button colors */
 .retail-ring {
-    background-color: #0bc050;
+    background-color: #7359f8;
 }
 
 .retail-ring:hover {
-    background-color: #01a03e;
+    background-color: #7359f8;
     /* Darker shade on hover */
 }
 
 .releasepreview-ring {
-    background-color: #7bda00;
+    background-color: #674af8;
 }
 
 .releasepreview-ring:hover {
-    background-color: #60a801;
+    background-color: #674af8;
     /* Darker shade on hover */
 }
 
 .slow-ring {
-    background-color: #b2da00;
+    background-color: #5c3dfa;
 }
 
 .slow-ring:hover {
-    background-color: #97b900;
+    background-color: #5c3dfa;
     /* Darker shade on hover */
 }
 
 .fast-ring {
-    background-color: #d6da00;
+    background-color: #5534fc;
 }
 
 .fast-ring:hover {
-    background-color: #b1b401;
+    background-color: #5534fc;
     /* Darker shade on hover */
 }
 
@@ -182,9 +182,9 @@ tbody tr:nth-child(odd) td a:visited {
 footer {
     font-size: 48px;
     font-family: "Bebas Neue", sans-serif;
-    background: linear-gradient(to right, gray, lightgray, gray);
-    background: -webkit-linear-gradient(to right, gray, lightgray, gray);
-    background: -moz-linear-gradient(to right, gray, lightgray, gray);
+    background: linear-gradient(to right, aqua, #7359f8, aqua);
+    background: -webkit-linear-gradient(to right, aqua, #7359f8, aqua);
+    background: -moz-linear-gradient(to right, aqua, #7359f8, aqua);
     background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
