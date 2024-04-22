@@ -6,7 +6,7 @@
     },
     {
         "Name": "Microsoft App Installer",
-        "Info": "https: //go.microsoft.com/fwlink/?linkid=2249905&culture=es-gt&country=gt&clcid=0x100a",
+        "Info": "https://go.microsoft.com/fwlink/?linkid=2249905&culture=es-gt&country=gt&clcid=0x100a",
         "AppID": "9NBLGGH4NNS1"
     },
     {
@@ -41,17 +41,17 @@
     },
     {
         "Name": "Lively Wallpaper",
-        "Info": "https: //github.com/rocksdanister/lively",
+        "Info": "https://github.com/rocksdanister/lively",
         "AppID": "9NTM2QC6QWS7"
     },
     {
         "Name": "Lively Weather",
-        "Info": "https: //github.com/rocksdanister/weather",
+        "Info": "https://github.com/rocksdanister/weather",
         "AppID": "9PP0MFQFVSC5"
     },
     {
         "Name": "Dynamic Theme",
-        "Info": "https: //apps.pinnula.ca/es/dynamic-theme/9bghzk",
+        "Info": "https://apps.pinnula.ca/es/dynamic-theme/9bghzk",
         "AppID": "9NBLGGH1ZBKW"
     },
     {
@@ -75,6 +75,11 @@
         "AppID": "9NCBCSZSJRSB"
     },
     {
+        "Name": "Zoom",
+        "Info": "",
+        "AppID": "XP99J3KP4XZ4VV"
+    },
+    {
         "Name": "PuTTy",
         "Info": "",
         "AppID": "XPFNZKSKLBP7RJ"
@@ -83,6 +88,21 @@
         "Name": "ClipChamp",
         "Info": "",
         "AppID": "9P1J8S7CCWWT"
+    },
+    {
+        "Name": "Dolby Access",
+        "Info": "",
+        "AppID": "9N0866FS04W8"
+    },
+    {
+        "Name": "Samsung QuickShare",
+        "Info": "",
+        "AppID": "9PCTGDFXVZLJ"
+    },
+    {
+        "Name": "EarTrumpet",
+        "Info": "https://github.com/File-New-Project/EarTrumpet",
+        "AppID": "9NBLGGH516XP"
     },
     {
         "Name": "Ambie White Noise",
@@ -103,6 +123,11 @@
         "Name": "Microsoft PowerToys",
         "Info": "",
         "AppID": "XP89DCGQ3K6VLD"
+    },
+    {
+        "Name": "Microsoft Visual Studio Code",
+        "Info": "",
+        "AppID": "XP9KHM4BK9FZ7Q"
     },
     {
         "Name": "DevToys",
@@ -126,7 +151,7 @@
     },
     {
         "Name": "Microsoft Phone Link",
-        "Info": "https: //aka.ms/linkphone, https: //aka.ms/phonelinkqrc, https: //www.aka.ms/yourpc",
+        "Info": "https://aka.ms/linkphone, https://aka.ms/phonelinkqrc, https://www.aka.ms/yourpc",
         "AppID": "9NMPJ99VJBWV"
     },
     {
@@ -161,7 +186,7 @@
     },
     {
         "Name": "Dev Home",
-        "Info": "https: //aka.ms/dsc.yaml",
+        "Info": "https://aka.ms/dsc.yaml",
         "AppID": "9N8MHTPHNGVV"
     },
     {
@@ -181,7 +206,7 @@
     },
     {
         "Name": "WSL Manager",
-        "Info": "https: //github.com/bostrot/wsl2-distro-manager",
+        "Info": "https://github.com/bostrot/wsl2-distro-manager",
         "AppID": "9NWS9K95NMJB"
     },
     {
@@ -191,12 +216,12 @@
     },
     {
         "Name": "Windows Subsystem for Android (WSA)",
-        "Info": "https: //github.com/MustardChef/WSAPackages/, https: //github.com/MustardChef/WSABuilds",
+        "Info": "https://github.com/MustardChef/WSAPackages/, https://github.com/MustardChef/WSABuilds",
         "AppID": "9P3395VX91NR"
     },
     {
         "Name": "WSA System Control",
-        "Info": "https: //github.com/infinitepower18/WSA-SystemControl",
+        "Info": "https://github.com/infinitepower18/WSA-SystemControl",
         "AppID": "9PFCTFQ8V8C3"
     },
     {
@@ -231,7 +256,7 @@
     },
     {
         "Name": "Microsoft HEV-C Video Extensions from Device Manufacturer",
-        "Info": "https: //www.reddit.com/r/Windows11/comments/zqq346/no_longer_free_windows_10_hevc_video_extensions/",
+        "Info": "https://www.reddit.com/r/Windows11/comments/zqq346/no_longer_free_windows_10_hevc_video_extensions/",
         "AppID": "9N4WGH0Z6VHQ"
     },
     {
@@ -310,6 +335,16 @@
         "AppID": "9WZDNCRFHVN5"
     },
     {
+        "Name": "Microsoft Alarms & Clock",
+        "Info": "",
+        "AppID": "9WZDNCRFJ3PR"
+    },
+    {
+        "Name": "Microsoft Camera",
+        "Info": "",
+        "AppID": "9WZDNCRFJBBG"
+    },
+    {
         "Name": "Microsoft Windows File Recovery",
         "Info": "",
         "AppID": "9N26S50LN705"
@@ -323,6 +358,11 @@
         "Name": "Microsoft Paint",
         "Info": "",
         "AppID": "9PCFS5B6T72H"
+    },
+    {
+        "Name": "Microsoft Paint 3D",
+        "Info": "",
+        "AppID": "9NBLGGH5FV99"
     },
     {
         "Name": "Microsoft Defender",
