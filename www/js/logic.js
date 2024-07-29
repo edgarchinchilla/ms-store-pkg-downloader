@@ -22,14 +22,18 @@ function loadJsonAndBuildAppsList() {
                 headerCell.textContent = key;
                 headerRow.appendChild(headerCell);
             }
-            // Add an "MS Store" header
+            // Add an "MS Store (App)" header
             const custHeaderCell1 = document.createElement('th');
-            custHeaderCell1.textContent = "MS Store";
+            custHeaderCell1.textContent = "MS Store (App)";
             headerRow.appendChild(custHeaderCell1);
-            // Add an "Actions" header for Rings
+            // Add an "MS Store (Online)" header
             const custHeaderCell2 = document.createElement('th');
-            custHeaderCell2.textContent = "Rings";
+            custHeaderCell2.textContent = "MS Store (Online)";
             headerRow.appendChild(custHeaderCell2);
+            // Add an "Actions" header for Rings
+            const custHeaderCell3 = document.createElement('th');
+            custHeaderCell3.textContent = "Rings";
+            headerRow.appendChild(custHeaderCell3);
             // Attach the header row to the table
             tableHeader.appendChild(headerRow);
             dataTable.appendChild(tableHeader);
@@ -47,10 +51,14 @@ function loadJsonAndBuildAppsList() {
                     latestItemValue = item[value];
                     dataRow.appendChild(dataCell);
                 }
-                // Add an "Actions" field with one button per Store "Ring"
-                const msStoreDataCell = document.createElement('td');
-                msStoreDataCell.innerHTML += "<a href=\"https://apps.microsoft.com/store/detail/" + latestItemValue + "\" target=\"_blank\">Visit on MS Store</a>";
-                dataRow.appendChild(msStoreDataCell);
+                // Add an "Open in MS Store (App)" field
+                const msAppStoreDataCell = document.createElement('td');
+                msAppStoreDataCell.innerHTML += "<a href=\"ms-windows-store://pdp?referrer=storeforweb&productid=" + latestItemValue + "&ocid=storeweb-pdp-open-cta\" target=\"_blank\">Open in MS Store App</a>";
+                dataRow.appendChild(msAppStoreDataCell);
+                // Add an "Open in MS Store (Online)" field
+                const msOnlineStoreDataCell = document.createElement('td');
+                msOnlineStoreDataCell.innerHTML += "<a href=\"https://apps.microsoft.com/store/detail/" + latestItemValue + "\" target=\"_blank\">Visit on MS Online Store</a>";
+                dataRow.appendChild(msOnlineStoreDataCell);
                 // Add an "Actions" field with one button per Store "Ring"
                 const actionsDataCell = document.createElement('td');
                 actionsDataCell.className = "action-buttons";

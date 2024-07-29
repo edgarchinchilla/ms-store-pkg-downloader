@@ -55,9 +55,14 @@
         "AppID": "9N0DX20HK701"
     },
     {
-        "Name": "Microsoft Windows 365",
+        "Name": "Microsoft Windows App",
         "Info": "",
         "AppID": "9N1F85V9T8BN"
+    },
+    {
+        "Name": "Microsoft 365 (Office)",
+        "Info": "",
+        "AppID": "9WZDNCRD29V9"
     },
     {
         "Name": "Microsoft Phone Link",
@@ -78,6 +83,11 @@
         "Name": "Microsoft To Do: Lists, Tasks & Reminders",
         "Info": "",
         "AppID": "9NBLGGH5R558"
+    },
+    {
+        "Name": "Microsoft Forms",
+        "Info": "",
+        "AppID": "9NHKF5NVCG00"
     },
     {
         "Name": "Microsoft Outlook for Windows",
@@ -165,6 +175,11 @@
         "AppID": "9NBLGGH5FV99"
     },
     {
+        "Name": "Microsoft Xbox",
+        "Info": "",
+        "AppID": "9MV0B5HZVK9Z"
+    },
+    {
         "Name": "Microsoft ClipChamp",
         "Info": "",
         "AppID": "9P1J8S7CCWWT"
@@ -173,6 +188,11 @@
         "Name": "Microsoft Remote Desktop",
         "Info": "",
         "AppID": "9WZDNCRFJ3PS"
+    },
+    {
+        "Name": "Microsoft Power BI Desktop",
+        "Info": "",
+        "AppID": "9NTXR16HNW1T"
     },
     {
         "Name": "Microsoft Designer",
@@ -185,14 +205,19 @@
         "AppID": "9P1HQ5TQZMGD"
     },
     {
-        "Name": "Microsoft Power BI Desktop",
+        "Name": "Microsoft Journal",
         "Info": "",
-        "AppID": "9NTXR16HNW1T"
+        "AppID": "9N318R854RHH"
     },
     {
         "Name": "Microsoft Accesory Center",
         "Info": "",
         "AppID": "9N013P0KR5VX"
+    },
+    {
+        "Name": "Microsoft SysInternals Suite",
+        "Info": "",
+        "AppID": "9P7KNL5RWT25"
     },
     {
         "Name": "Microsoft Dev Home",
