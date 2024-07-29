@@ -100,9 +100,19 @@
         "AppID": "9WZDNCRFJBH4"
     },
     {
+        "Name": "Microsoft Windows Media Player",
+        "Info": "",
+        "AppID": "9WZDNCRFJ3PT"
+    },
+    {
         "Name": "Microsoft AV1 Video Extension",
         "Info": "",
         "AppID": "9MVZQVXJBQ9V"
+    },
+    {
+        "Name": "Microsoft VP9 Video Extension",
+        "Info": "",
+        "AppID": "9N4D0MSMP0PT"
     },
     {
         "Name": "Microsoft MPEG-2 Video Extension",
@@ -128,11 +138,6 @@
         "Name": "Microsoft OneDrive",
         "Info": "",
         "AppID": "9WZDNCRFJ1P3"
-    },
-    {
-        "Name": "Microsoft Windows Media Player",
-        "Info": "",
-        "AppID": "9WZDNCRFJ3PT"
     },
     {
         "Name": "Microsoft DVD Player",
@@ -175,6 +180,11 @@
         "AppID": "9NBLGGH5FV99"
     },
     {
+        "Name": "Microsoft Mixed Reality Portal",
+        "Info": "",
+        "AppID": "9NG1H8B3ZC7M"
+    },
+    {
         "Name": "Microsoft Xbox",
         "Info": "",
         "AppID": "9MV0B5HZVK9Z"
@@ -193,6 +203,11 @@
         "Name": "Microsoft Power BI Desktop",
         "Info": "",
         "AppID": "9NTXR16HNW1T"
+    },
+    {
+        "Name": "Microsoft Power BI Report Builder",
+        "Info": "",
+        "AppID": "9N3BL69HC2MC"
     },
     {
         "Name": "Microsoft Designer",
@@ -226,7 +241,7 @@
     },
     {
         "Name": "Microsoft UWP Task Monitor",
-        "Info": "https://aka.ms/dsc.yaml",
+        "Info": "https://github.com/Microsoft/AppModelSamples/tree/master/Samples/UWPTaskMonitor",
         "AppID": "9PNC4SL3XFHR"
     },
     {
@@ -245,6 +260,11 @@
         "AppID": "9N26S50LN705"
     },
     {
+        "Name": "Microsoft Windows Configuration Designer",
+        "Info": "",
+        "AppID": "9NBLGGH4TX22"
+    },
+    {
         "Name": "Microsoft Power Apps",
         "Info": "",
         "AppID": "9MVC8P1Q3B29"
@@ -253,6 +273,16 @@
         "Name": "Microsoft Font Maker",
         "Info": "",
         "AppID": "9N9209F8S3VC"
+    },
+    {
+        "Name": "Microsoft Windows HDR Calibration",
+        "Info": "",
+        "AppID": "9N7F2SM5D1LR"
+    },
+    {
+        "Name": "Microsoft Dynamic Refresh Rate Tool",
+        "Info": "",
+        "AppID": "9NKBPXWF3RWR"
     },
     {
         "Name": "Microsoft Defender",
@@ -278,6 +308,36 @@
         "Name": "Microsoft Surface Diagnostic Kit",
         "Info": "",
         "AppID": "9NF1MR6C60ZF"
+    },
+    {
+        "Name": "Microsoft Emulator",
+        "Info": "",
+        "AppID": "9N0TN65P5BF6"
+    },
+    {
+        "Name": "Microsoft Diagnostic Data Viewer",
+        "Info": "",
+        "AppID": "9N8WTRRSQ8F7"
+    },
+    {
+        "Name": "Microsoft WinDbg",
+        "Info": "",
+        "AppID": "9PGJGD53TN86"
+    },
+    {
+        "Name": "Microsoft Fluent XAML Theme Editor",
+        "Info": "",
+        "AppID": "9N2XD3Q8X57C"
+    },
+    {
+        "Name": "Microsoft MSIX Packaging Tool",
+        "Info": "",
+        "AppID": "9N5LW3JBCXKF"
+    },
+    {
+        "Name": "Microsoft Bundle Generator",
+        "Info": "",
+        "AppID": "9NBLGGH43PMQ"
     },
     {
         "Name": "Microsoft Pantone Color of the Year 2022",
@@ -375,11 +435,6 @@
         "AppID": "9P8LTPGCBZXD"
     },
     {
-        "Name": "WinDbg",
-        "Info": "",
-        "AppID": "9PGJGD53TN86"
-    },
-    {
         "Name": "WhatsApp",
         "Info": "",
         "AppID": "9NKSQGP7F2NH"
@@ -403,10 +458,5 @@
         "Name": "WSA Toolbox",
         "Info": "",
         "AppID": "9PPSP2MKVTGT"
-    },
-    {
-        "Name": "MSIX Packaging Tool",
-        "Info": "",
-        "AppID": "9N5LW3JBCXKF"
     }
 ]
