@@ -225,6 +225,11 @@
         "AppID": "9N8MHTPHNGVV"
     },
     {
+        "Name": "Microsoft UWP Task Monitor",
+        "Info": "https://aka.ms/dsc.yaml",
+        "AppID": "9PNC4SL3XFHR"
+    },
+    {
         "Name": "Microsoft Windows Subsystem for Linux (WSL)",
         "Info": "",
         "AppID": "9P9TQF7MRM4R"
