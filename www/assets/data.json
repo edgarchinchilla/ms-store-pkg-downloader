@@ -25,6 +25,11 @@
         "AppID": "9MSSGKG348SP"
     },
     {
+        "Name": "Microsoft Copilot",
+        "Info": "",
+        "AppID": "9NHT9RB2F4HD"
+    },
+    {
         "Name": "Microsoft Powershell",
         "Info": "",
         "AppID": "9MZ1SNWT0N5D"
@@ -325,9 +330,19 @@
         "AppID": "9PGJGD53TN86"
     },
     {
+        "Name": "Microsoft Windows Performance Analyzer",
+        "Info": "",
+        "AppID": "9N0W1B2BXGNZ"
+    },
+    {
         "Name": "Microsoft Fluent XAML Theme Editor",
         "Info": "",
         "AppID": "9N2XD3Q8X57C"
+    },
+    {
+        "Name": "Microsoft XAML Studio",
+        "Info": "",
+        "AppID": "9NTLS214TKMQ"
     },
     {
         "Name": "Microsoft MSIX Packaging Tool",
