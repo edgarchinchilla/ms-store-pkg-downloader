@@ -43,38 +43,43 @@ function loadJsonAndBuildAppsList() {
             tableBody.id = "tableBody";
             for (let i = 0; i < data.length; i++) {
                 const item = data[i];
-                let latestItemValue = "";
+                let itemAppID = "";
+                let itemValue = "";
                 const dataRow = document.createElement('tr');
                 for (const value in item) {
                     const dataCell = document.createElement('td');
-                    switch (item) {
+                    switch (value) {
                         case "Info":
                             // Temporary empty
                             break;
+                        case "AppID":
+                            // Temporary empty
+                            itemAppID = item[value];
+                            itemValue = item[value];
+                            break;
                         default:
-                            console.log(item);
-                            console.log(value);
-                            dataCell.textContent = item[value];
+                            itemValue = item[value];
                     }
-                    latestItemValue = item[value];
+
+                    dataCell.textContent = itemValue;
                     dataRow.appendChild(dataCell);
                 }
                 // Add an "Open in MS Store (App)" field
                 const msAppStoreDataCell = document.createElement('td');
-                msAppStoreDataCell.innerHTML += "<a href=\"ms-windows-store://pdp?referrer=storeforweb&productid=" + latestItemValue + "&ocid=storeweb-pdp-open-cta\" target=\"_blank\">Open in MS Store App</a>";
+                msAppStoreDataCell.innerHTML += "<a href=\"ms-windows-store://pdp?referrer=storeforweb&productid=" + itemAppID + "&ocid=storeweb-pdp-open-cta\" target=\"_blank\">Open in MS Store App</a>";
                 dataRow.appendChild(msAppStoreDataCell);
                 // Add an "Open in MS Store (Online)" field
                 const msOnlineStoreDataCell = document.createElement('td');
-                msOnlineStoreDataCell.innerHTML += "<a href=\"https://apps.microsoft.com/store/detail/" + latestItemValue + "\" target=\"_blank\">Visit on MS Online Store</a>";
+                msOnlineStoreDataCell.innerHTML += "<a href=\"https://apps.microsoft.com/store/detail/" + itemAppID + "\" target=\"_blank\">Visit on MS Online Store</a>";
                 dataRow.appendChild(msOnlineStoreDataCell);
                 // Add an "Actions" field with one button per Store "Ring"
                 const actionsDataCell = document.createElement('td');
                 actionsDataCell.className = "action-buttons";
-                // NOTE: latestItemValue in the JSON is the AppID
-                actionsDataCell.innerHTML += "<button onClick=\"setAppValues('" + latestItemValue + "', 'Retail')\" class=\"custom-button retail-ring\">Retail</button>";
-                actionsDataCell.innerHTML += "<button onClick=\"setAppValues('" + latestItemValue + "', 'RP')\" class=\"custom-button releasepreview-ring\">Release Preview</button>";
-                actionsDataCell.innerHTML += "<button onClick=\"setAppValues('" + latestItemValue + "', 'WIS')\" class=\"custom-button slow-ring\">Slow</button>";
-                actionsDataCell.innerHTML += "<button onClick=\"setAppValues('" + latestItemValue + "', 'WIF')\" class=\"custom-button fast-ring\">Fast</button>";
+                // NOTE: itemAppID in the JSON is the AppID
+                actionsDataCell.innerHTML += "<button onClick=\"setAppValues('" + itemAppID + "', 'Retail')\" class=\"custom-button retail-ring\">Retail</button>";
+                actionsDataCell.innerHTML += "<button onClick=\"setAppValues('" + itemAppID + "', 'RP')\" class=\"custom-button releasepreview-ring\">Release Preview</button>";
+                actionsDataCell.innerHTML += "<button onClick=\"setAppValues('" + itemAppID + "', 'WIS')\" class=\"custom-button slow-ring\">Slow</button>";
+                actionsDataCell.innerHTML += "<button onClick=\"setAppValues('" + itemAppID + "', 'WIF')\" class=\"custom-button fast-ring\">Fast</button>";
                 dataRow.appendChild(actionsDataCell);
                 // Append row to the table body
                 tableBody.appendChild(dataRow);
