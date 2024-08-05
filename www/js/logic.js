@@ -47,7 +47,13 @@ function loadJsonAndBuildAppsList() {
                 const dataRow = document.createElement('tr');
                 for (const value in item) {
                     const dataCell = document.createElement('td');
-                    dataCell.textContent = item[value];
+                    switch (item) {
+                        case "Info":
+                            // Temporary empty
+                            break;
+                        default:
+                            dataCell.textContent = item[value];
+                    }
                     latestItemValue = item[value];
                     dataRow.appendChild(dataCell);
                 }
