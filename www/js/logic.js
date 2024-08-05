@@ -52,6 +52,8 @@ function loadJsonAndBuildAppsList() {
                             // Temporary empty
                             break;
                         default:
+                            console.log(item);
+                            console.log(value);
                             dataCell.textContent = item[value];
                     }
                     latestItemValue = item[value];
