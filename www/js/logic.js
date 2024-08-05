@@ -51,6 +51,7 @@ function loadJsonAndBuildAppsList() {
                     switch (value) {
                         case "Info":
                             // Temporary empty
+                            itemValue = "";
                             break;
                         case "AppID":
                             // Temporary empty
