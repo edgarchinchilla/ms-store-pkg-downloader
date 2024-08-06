@@ -27,9 +27,25 @@
         <!-- <input type="submit" value="Submit"> -->
     </form>
 
+    <!-- APP INFO MODAL -->
+    <div id="modal" class="modal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <p style="padding-left: 25px; padding-right: 25px;" id="appInfoHeader"></p>
+                <span class="btnclose btnclose-modal" onClick="changeModalStatus('close', '', '')">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p id="appInfoDescription"></p>
+            </div>
+            <div class="modal-footer">
+                <span>...</span>
+            </div>
+        </div>
+    </div>
+
     <!-- CREDITS AND WARNINGS -->
     <div class="alert">
-        <span class="closebtn" onClick="this.parentElement.style.display='none';">&times;</span>
+        <span class="btnclose" onClick="this.parentElement.style.display='none';">&times;</span>
         *This site relies on the services of <a href="https://store.rg-adguard.net/">rg-adguard.net</a>
     </div>
     

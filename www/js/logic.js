@@ -8,6 +8,31 @@ function setAppValues(appId, ring) {
     document.getElementById('appListForm').submit();
 }
 
+// MODAL BEHAVIOR
+function changeModalStatus(modalStatus, appName, appInfo) {
+    const modalContainer = document.getElementById('modal');
+    const modalDialog = document.getElementById('modal-dialog');
+    const appInfoHeader = document.getElementById('appInfoHeader');
+    const appInfoDescription = document.getElementById('appInfoDescription');
+    switch (modalStatus) {
+        case "open":
+            appInfoHeader.textContent = appName;
+            appInfoDescription.textContent = appInfo;
+            modalContainer.classList.add('opened');
+            modalDialog.classList.add('opened');
+            break;
+        case "close":
+            appInfoHeader.textContent = appName;
+            appInfoDescription.textContent = appInfo;
+            modalContainer.classList.remove('opened');
+            modalDialog.classList.remove('opened');
+            break;
+        default:
+            modalContainer.classList.remove('opened');
+            modalDialog.classList.remove('opened');
+    }
+}
+
 // JSON LOAD AND DYNAMIC TABLE BUILDER
 function loadJsonAndBuildAppsList() {
     const dataTable = document.getElementById('appsList');
@@ -44,34 +69,43 @@ function loadJsonAndBuildAppsList() {
             for (let i = 0; i < data.length; i++) {
                 const item = data[i];
                 let itemAppID = "";
-                let itemValue = "";
+                let itemAppName = "";
+                let itemAppInfo = "";
                 const dataRow = document.createElement('tr');
                 for (const value in item) {
                     const dataCell = document.createElement('td');
                     switch (value) {
+                        case "Name":
+                            itemAppName = item[value];
+                            dataCell.textContent = item[value];
+                            break;
                         case "Info":
-                            // Temporary empty
-                            itemValue = "";
+                            itemAppInfo = item[value];
+                            // Only show button if there is additional info to show
+                            if (itemAppInfo == "") {
+                                dataCell.textContent = "";
+                            } else {
+                                dataCell.innerHTML += "<button onClick=\"changeModalStatus('open', '" + itemAppName + "', '" + itemAppInfo + "')\" class=\"custom-button app-info\">More...</button>";
+                            }
                             break;
                         case "AppID":
-                            // Temporary empty
                             itemAppID = item[value];
-                            itemValue = item[value];
+                            dataCell.textContent = item[value];
                             break;
                         default:
-                            itemValue = item[value];
+                            dataCell.textContent = item[value];
                     }
 
-                    dataCell.textContent = itemValue;
+                    // Add new column to the table
                     dataRow.appendChild(dataCell);
                 }
-                // Add an "Open in MS Store (App)" field
+                // Add an "Store App" field
                 const msAppStoreDataCell = document.createElement('td');
-                msAppStoreDataCell.innerHTML += "<a href=\"ms-windows-store://pdp?referrer=storeforweb&productid=" + itemAppID + "&ocid=storeweb-pdp-open-cta\" target=\"_blank\">Open in MS Store App</a>";
+                msAppStoreDataCell.innerHTML += "<a href=\"ms-windows-store://pdp?referrer=storeforweb&productid=" + itemAppID + "&ocid=storeweb-pdp-open-cta\" target=\"_blank\">Store App</a>";
                 dataRow.appendChild(msAppStoreDataCell);
-                // Add an "Open in MS Store (Online)" field
+                // Add an "Online Store" field
                 const msOnlineStoreDataCell = document.createElement('td');
-                msOnlineStoreDataCell.innerHTML += "<a href=\"https://apps.microsoft.com/store/detail/" + itemAppID + "\" target=\"_blank\">Visit on MS Online Store</a>";
+                msOnlineStoreDataCell.innerHTML += "<a href=\"https://apps.microsoft.com/store/detail/" + itemAppID + "\" target=\"_blank\">Online Store</a>";
                 dataRow.appendChild(msOnlineStoreDataCell);
                 // Add an "Actions" field with one button per Store "Ring"
                 const actionsDataCell = document.createElement('td');
