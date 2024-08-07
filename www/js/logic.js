@@ -142,3 +142,14 @@ function addTableFiltering() {
         }
     });
 }
+
+// RESET TABLE FILTERS
+function resetTableFilters() {
+    const tableElement = document.getElementById('appsList');
+    const tableRows = tableElement.querySelectorAll('tbody tr');
+
+    for (let i = 0; i < tableRows.length; i++) {
+        const row = tableRows[i];
+        row.style.display = '';
+    }
+}
