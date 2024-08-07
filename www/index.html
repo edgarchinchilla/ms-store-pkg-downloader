@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <script type="text/javascript" src="./js/logic.js"></script>
-    <title>MS Store MSIX Downloader</title>
+    <title>Microsoft Store MSIX Downloader</title>
 </head>
 
 <body>
@@ -50,7 +50,10 @@
     </div>
     
     <!-- FILTER FIELD-->
-    <input type="text" id="filter" placeholder="Filter by App name...">
+    <form id="searchBox">
+        <input type="text" id="filter" placeholder="Filter by App name...">
+        <button type="reset" id="clear">x</button>
+    </form>
 
     <!-- DYNAMIC APPS LIST HOLDER -->
     <table id="appsList"></table>

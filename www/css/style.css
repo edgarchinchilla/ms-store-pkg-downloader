@@ -166,17 +166,45 @@ tbody tr:nth-child(odd) td a:visited {
 }
 
 /* FILTER STYLING */
-#filter {
+#searchBox {
     width: 98.5%;
+    position: relative;
+    display: inline-block;
+}
+
+#filter {
+    width: 100%;
     padding: 10px;
     border: none;
     border-bottom: 1px solid #ddd;
     outline: none;
     font-size: 16px;
     margin-bottom: 15px;
-    font-family: "Poppins", sans-serif;
     color: whitesmoke;
     background-color: transparent;
+    font-family: "Poppins", sans-serif;
+}
+
+#clear {
+    position: absolute;
+    right: -10px;
+    top: 8px;
+    padding: 0px 10px;
+    font-size: 16px;
+    align-items: center;
+    color: whitesmoke;
+    background-color: transparent;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    /* hide the button initially */
+    /*display: none;*/
+}
+
+#clear:hover {
+    background-color: #2e2851;
+    font-weight: bold;
 }
 
 /* MODAL STYLING */
