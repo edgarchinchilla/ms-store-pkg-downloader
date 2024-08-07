@@ -77,10 +77,11 @@ tbody tr:nth-child(odd) td a:visited {
 
 /* BUTTONS STYLING */
 .custom-button {
+    font-family: "Poppins", sans-serif;
     background-color: #2196F3;
     /* Primary color */
     padding: 1%;
-    color: white;
+    color: whitesmoke;
     border: none;
     outline: none;
     cursor: pointer;
@@ -128,6 +129,7 @@ tbody tr:nth-child(odd) td a:visited {
 }
 
 .app-info {
+    padding: 3px;
     background-color: #492cdd;
 }
 
@@ -148,7 +150,7 @@ tbody tr:nth-child(odd) td a:visited {
 /* The close button */
 .btnclose {
     margin-left: 15px;
-    color: white;
+    color: whitesmoke;
     font-weight: bold;
     float: right;
     font-size: 22px;
