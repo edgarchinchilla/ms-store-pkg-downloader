@@ -356,7 +356,7 @@
     },
     {
         "Name": "Microsoft MSIX Packaging Tool",
-        "Info": "",
+        "Info": "https://github.com/microsoft/MSIX-Toolkit",
         "AppID": "9N5LW3JBCXKF"
     },
     {
@@ -463,6 +463,11 @@
         "Name": "WinToys",
         "Info": "",
         "AppID": "9P8LTPGCBZXD"
+    },
+    {
+        "Name": "MSIX Hero",
+        "Info": "https://github.com/marcinotorowski/msix-hero",
+        "AppID": "9N3LL1W6QCNT"
     },
     {
         "Name": "WhatsApp",
