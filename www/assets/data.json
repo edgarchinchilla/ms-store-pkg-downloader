@@ -385,6 +385,11 @@
         "AppID": "9PKZNRN46X9J"
     },
     {
+        "Name": "Lenovo PSReference",
+        "Info": "https://psref.lenovo.com/",
+        "AppID": "9MTFR63X2Z9V"
+    },
+    {
         "Name": "Lively Wallpaper",
         "Info": "https://github.com/rocksdanister/lively",
         "AppID": "9NTM2QC6QWS7"
